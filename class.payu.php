@@ -16,7 +16,7 @@ class CPayU extends PaymentModule {
         #var $type = PAYMTD_TYPE_ONLINE;
         var $language = 'rus';
         var $default_logo = '/data/images/loaderpayu.gif';
-        var $prUrl = "https://secure.payu.ua/order/lu.php";#"; 
+        var $prUrl = "https://secure.payu.ru/order/lu.php";#"; 
         
 
         var $useSSL = false;
@@ -68,16 +68,16 @@ class CPayU extends PaymentModule {
 
                 
                 $this->SettingsFields['CONF_PAYU_LU_URL'] = array(
-                    'settings_value'            => "https://secure.payu.ua/order/lu.php",
+                    'settings_value'            => "https://secure.payu.ru/order/lu.php",
                     'settings_title'            => CPayU::_ENC("LiveUpdate URL"),
-                    'settings_description'      => CPayU::_ENC("Ссылка LiveUpdate (default : https://secure.payu.ua/order/lu.php)"),
+                    'settings_description'      => CPayU::_ENC("Ссылка LiveUpdate (default : https://secure.payu.ru/order/lu.php)"),
                     'settings_html_function'    => 'setting_TEXT_BOX(0,',
                     'sort_order'                => 1
                 );
                 $this->SettingsFields['CONF_PAYU_CURRENCY'] = array(
-                    'settings_value'            => "UAH",
+                    'settings_value'            => "RUB",
                     'settings_title'            => CPayU::_ENC("Валюта мерчанта "),
-                    'settings_description'      => CPayU::_ENC("UAH"),
+                    'settings_description'      => CPayU::_ENC("RUB"),
                     'settings_html_function'    => 'setting_TEXT_BOX(0,', #'setting_CURRENCY_SELECT(',
                     'sort_order'                => 1
                 );
