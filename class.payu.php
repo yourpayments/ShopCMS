@@ -24,7 +24,7 @@ class CPayU extends PaymentModule {
         function _initVars(){
             
             $this->title = CPayU::_ENC("Платежная система PayU");
-            $this->description = CPayU::_ENC("Платежный агрегатор платежей PayU :<br> <a href='http://payu.ua'>PayU Украина</a><br><a href='http://payu.ru'>PayU Россия</a>");
+            $this->description = CPayU::_ENC("Платежный агрегатор платежей PayU :<br> <a href='http://payu.ru'>PayU Украина</a><br><a href='http://payu.ru'>PayU Россия</a>");
 
             $this->sort_order = 1;
     
