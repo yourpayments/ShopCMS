@@ -1,14 +1,11 @@
-(For PayU Ukraine and Russian ONLY)
--------
+# «Твои платежи», модуль для ShopCMS
 
-Модуль для ShopCMS 
-==========
+![](https://repository-images.githubusercontent.com/638835276/ff494b04-d65b-4843-8759-e85c689a7e80)
 
-
--------
+[НКО «Твои Платежи»](https://YPMN.ru/ "Платёжная система для сайтов, платформ и приложений") - платёжная система для сайтов, платформ, игр и приложений.
 
 
-Установка : 
+Установка: 
 
 1. Разместить файлы class.payu.php и class.payu.sc.php в папку `/{корень сайта}/core/modules/payument/`
 2. Файл loaderpayu.gif поместить в папку `/{корень сайта}/data/images/` 

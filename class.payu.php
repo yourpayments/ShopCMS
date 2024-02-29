@@ -16,7 +16,7 @@ class CPayU extends PaymentModule {
         #var $type = PAYMTD_TYPE_ONLINE;
         var $language = 'rus';
         var $default_logo = '/data/images/loaderpayu.gif';
-        var $prUrl = "https://secure.payu.ru/order/lu.php";#"; 
+        var $prUrl = "https://secure.ypmn.ru/order/lu.php";#";
         
 
         var $useSSL = false;
@@ -24,7 +24,7 @@ class CPayU extends PaymentModule {
         function _initVars(){
             
             $this->title = CPayU::_ENC("Платежная система PayU");
-            $this->description = CPayU::_ENC("Платежный агрегатор платежей PayU :<br> <a href='http://payu.ru'>PayU Украина</a><br><a href='http://payu.ru'>PayU Россия</a>");
+            $this->description = CPayU::_ENC("Платежный агрегатор платежей PayU :<br> <a href='http://ypmn.ru'>PayU Украина</a><br><a href='http://ypmn.ru'>PayU Россия</a>");
 
             $this->sort_order = 1;
     
@@ -68,9 +68,9 @@ class CPayU extends PaymentModule {
 
                 
                 $this->SettingsFields['CONF_PAYU_LU_URL'] = array(
-                    'settings_value'            => "https://secure.payu.ru/order/lu.php",
+                    'settings_value'            => "https://secure.ypmn.ru/order/lu.php",
                     'settings_title'            => CPayU::_ENC("LiveUpdate URL"),
-                    'settings_description'      => CPayU::_ENC("Ссылка LiveUpdate (default : https://secure.payu.ru/order/lu.php)"),
+                    'settings_description'      => CPayU::_ENC("Ссылка LiveUpdate (default : https://secure.ypmn.ru/order/lu.php)"),
                     'settings_html_function'    => 'setting_TEXT_BOX(0,',
                     'sort_order'                => 1
                 );
